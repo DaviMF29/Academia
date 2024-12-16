@@ -1,0 +1,75 @@
+.about_us {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    justify-content: space-around;
+    height: 50vh;
+    
+}
+
+.about_us h1 {
+    color: var(--yellow);
+    font-family: var(--font-family);
+}
+
+.text {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.bar {
+    width: 50px;
+    height: 5px;
+    background-color: var(--yellow);
+    margin: 10px 0;
+}
+
+.about_us p {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.image img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.findout {
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .about_us {
+        flex-direction: column; /* Coloca os elementos em uma coluna */
+        height: auto; /* Ajusta a altura automaticamente */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .text {
+        max-width: 100%; /* Ocupa toda a largura disponível */
+        margin: 20px 0; /* Espaçamento superior e inferior */
+    }
+
+    .image img {
+        width: 100%; /* Ajusta a largura para 100% do container */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-top: 20px; /* Adiciona espaçamento superior */
+    }
+}
+
+@media (max-width: 480px) {
+    .about_us {
+        padding: 10px; /* Reduz o padding para telas muito pequenas */
+    }
+
+    .text {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    .bar {
+        width: 40px; /* Ajusta a barra para telas pequenas */
+    }
+}

@@ -1,0 +1,139 @@
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.information h1 {
+    font-size: 3rem;
+    color: var(--dark-gray);
+}
+
+.information p {
+    color: var(--corFundo);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.package {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: 100%;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border: 1px solid var(--gray-opacity);
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra */
+}
+
+.plan h4 {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    margin-bottom: 20px;
+}
+
+.plan a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    width: 70%;
+    height: 50px;
+    background-color: var(--yellow);
+    color: var(--corTexto);
+    margin: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.plan ul li {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: #333;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+
+.plan ul li::before {
+    content: '✔';
+    color: green;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .package {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+        /* Planos ocupam quase toda a largura */
+        max-width: 400px;
+    }
+
+    .information h1 {
+        font-size: 2rem;
+    }
+
+    .information p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .information h1 {
+        font-size: 1.8rem;
+    }
+
+    .information p {
+        font-size: 0.9rem;
+    }
+
+    .plan {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .plan h4 {
+        font-size: 1.3rem;
+    }
+
+    .plan a {
+        width: 90%;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    .plan ul li {
+        font-size: 0.8rem;
+    }
+}
